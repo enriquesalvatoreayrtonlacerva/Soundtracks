@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Audio - Dark Elegante</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #0d0d0d;
+      color: #e6e6e6;
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      background: #0d0d0d;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .track {
+      background: #141414;
+      padding: 30px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      border: 1px solid #1f1f1f;
+      box-shadow: 0 0 25px rgba(0,0,0,0.35);
+      transition: transform .3s ease;
+    }
+
+    .track:hover {
+      transform: translateY(-4px);
+    }
+
+    .track h2 {
+      margin-top: 0;
+      font-weight: 300;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .track .meta {
+      font-size: 0.9rem;
+      opacity: 0.6;
+      margin-bottom: 20px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      opacity: 0.5;
+      border-top: 1px solid #1a1a1a;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Il Mio Portfolio Audio</h1>
+    <p>Produzioni · Sound Design · Musica · Tracce Originali</p>
+  </header>
+
+  <div class="container">
+    <!-- Esempio progetto audio 1 -->
+    <div class="track">
+      <h2>Titolo Traccia 1</h2>
+      <div class="meta">Sound Design · 2025</div>
+      <p>Descrizione breve del progetto. Puoi spiegare stile, strumenti, mood o utilizzo della traccia.</p>
+      <audio controls>
+        <source src="mp3/traccia1.mp3" type="audio/mpeg">
+        Il tuo browser non supporta il player audio.
+      </audio>
+    </div>
+
+    <!-- Esempio progetto audio 2 -->
+    <div class="track">
+      <h2>Titolo Traccia 2</h2>
+      <div class="meta">Colonna Sonora · 2024</div>
+      <p>Una descrizione della traccia, progetto o cliente coinvolto.</p>
+      <audio controls>
+        <source src="mp3/traccia2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <footer>© 2025 - Il Mio Portfolio Audio</footer>
+</body>
+  </html>
+  
