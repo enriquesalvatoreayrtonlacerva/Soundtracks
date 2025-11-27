@@ -5,20 +5,43 @@ body {
   color: #e6e6e6;
 }
 
-header {
-  padding: 40px;
-  text-align: center;
+/* HEADER CON IMMAGINE AFFIANCATA */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
   border-bottom: 1px solid #222;
 }
 
-header h1 {
-  font-size: 2.6rem;
-  font-weight: 300;
+.hero-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #1f1f1f;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
 
-header p {
+.hero-text h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.hero-text p {
   font-size: 1.1rem;
   opacity: 0.7;
+  margin-top: 8px;
+}
+
+/* RESPONSIVE HEADER */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .container {
@@ -60,10 +83,7 @@ audio {
   margin-top: 20px;
 }
 
-/* ------------------ */
-/*     GALLERIA       */
-/* ------------------ */
-
+/* GALLERIA IMMAGINI */
 .gallery h2 {
   margin-top: 0;
   margin-bottom: 25px;
@@ -100,10 +120,7 @@ audio {
   display: block;
 }
 
-/* ------------------ */
-/*      LIGHTBOX      */
-/* ------------------ */
-
+/* LIGHTBOX */
 #lightbox {
   position: fixed;
   top: 0;
@@ -126,7 +143,6 @@ audio {
 }
 
 /* FOOTER */
-
 footer {
   text-align: center;
   padding: 30px;
