@@ -54,7 +54,7 @@
       </audio>
     </div>
 
-     <!-- Traccia 5 -->
+    <!-- Traccia 5 -->
     <div class="track">
       <h2>L'Onore dei Pupi. EP. 2</h2>
       <div class="meta">Short film based on life of Padre Pino Puglisi · 2025</div>
@@ -83,7 +83,7 @@
         <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/fINEpUGL.mp3" type="audio/mpeg">
       </audio>
     </div>
-    
+
     <!-- Traccia 8 -->
     <div class="track">
       <h2>L'Onore dei Pupi. EP. 3</h2>
@@ -93,7 +93,7 @@
         <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/DIALOGOINIZIALEPEPPINO.mp3" type="audio/mpeg">
       </audio>
     </div>
-    
+
     <!-- Traccia 9 -->
     <div class="track">
       <h2>L'Onore dei Pupi. EP. 3</h2>
@@ -124,7 +124,7 @@
       </audio>
     </div>
 
-     <!-- Traccia 12 -->
+    <!-- Traccia 12 -->
     <div class="track">
       <h2>L'Onore dei Pupi. EP. 4</h2>
       <div class="meta">Short film based on life of Giovanni Falcone e Paolo Borsellino · 2025</div>
@@ -134,7 +134,7 @@
       </audio>
     </div>
 
-     <!-- Traccia 13 -->
+    <!-- Traccia 13 -->
     <div class="track">
       <h2>L'Onore dei Pupi. EP. 4</h2>
       <div class="meta">Short film based on life of Giovanni Falcone e Paolo Borsellino  · 2025</div>
@@ -153,9 +153,57 @@
         <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/INTERVISTA.mp3" type="audio/mpeg">
       </audio>
     </div>
-    
+
   </div>
 
+  <!-- GALLERIA IMMAGINI -->
+  <section class="gallery container">
+    <h2>Galleria Immagini</h2>
+
+    <div class="image-grid">
+
+      <div class="image-card">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/img1.jpg"
+          alt="Immagine 1"
+          onclick="openLightbox(this.src)">
+      </div>
+
+      <div class="image-card">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/img2.jpg"
+          alt="Immagine 2"
+          onclick="openLightbox(this.src)">
+      </div>
+
+      <div class="image-card">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/img3.jpg"
+          alt="Immagine 3"
+          onclick="openLightbox(this.src)">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+
   <footer>© 2025 - Enrique Salvatore Ayrton La Cerva</footer>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+
 </body>
-  </html>
+</html>
