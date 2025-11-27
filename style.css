@@ -57,6 +57,7 @@ header.hero {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .track h2 {
@@ -79,6 +80,18 @@ header.hero {
 audio {
   width: 100%;
   outline: none;
+}
+
+/* =========================
+   SINOSSI TRACCE
+========================= */
+.synopsis-track {
+  background: rgba(0,0,0,0.05);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333;
 }
 
 /* =========================
@@ -124,13 +137,9 @@ audio {
 }
 
 /* =========================
-   SEZIONE COMPOSER OF
+   SEZIONE COMPOSER OF - SINOSSI
 ========================= */
-section.composer .image-grid {
-  gap: 30px;
-}
-
-.synopsis {
+.image-card .synopsis {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -151,54 +160,3 @@ section.composer .image-grid {
 
 /* =========================
    LIGHTBOX
-========================= */
-#lightbox {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  justify-content: center;
-  align-items: center;
-}
-
-#lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 60px;
-  background-color: #222;
-  color: white;
-  font-size: 0.9rem;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  header.hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .image-card {
-    width: 90%;
-  }
-
-  .track {
-    padding: 15px;
-  }
-}
-
