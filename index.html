@@ -7,11 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Enrique Salvatore Ayrton La Cerva</h1>
-    <p>Composizioni per film, trailer e progetti multimediali</p>
+
+  <!-- HEADER CON IMMAGINE -->
+  <header class="hero">
+    <img 
+      src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/profilo.jpg" 
+      alt="Enrique Salvatore Ayrton La Cerva" 
+      class="hero-img">
+
+    <div class="hero-text">
+      <h1>Enrique Salvatore Ayrton La Cerva</h1>
+      <p>Composizioni per film, trailer e progetti multimediali</p>
+    </div>
   </header>
 
+  <!-- CONTAINER TRACCE AUDIO -->
   <div class="container"> 
 
     <!-- Traccia 1 -->
@@ -137,7 +147,7 @@
     <!-- Traccia 13 -->
     <div class="track">
       <h2>L'Onore dei Pupi. EP. 4</h2>
-      <div class="meta">Short film based on life of Giovanni Falcone e Paolo Borsellino  · 2025</div>
+      <div class="meta">Short film based on life of Giovanni Falcone e Paolo Borsellino · 2025</div>
       <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
       <audio controls>
         <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/PAOLOEGIOVANNI.mp3" type="audio/mpeg">
@@ -164,21 +174,21 @@
 
       <div class="image-card">
         <img 
-          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/download.jpg"
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/img1.jpg"
           alt="Immagine 1"
           onclick="openLightbox(this.src)">
       </div>
 
       <div class="image-card">
         <img 
-          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/download (1).jpg"
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/img2.jpg"
           alt="Immagine 2"
           onclick="openLightbox(this.src)">
       </div>
 
       <div class="image-card">
         <img 
-          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/download (2).jpg"
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/img3.jpg"
           alt="Immagine 3"
           onclick="openLightbox(this.src)">
       </div>
@@ -190,7 +200,6 @@
   <div id="lightbox" onclick="closeLightbox()">
     <img id="lightbox-img" src="" alt="">
   </div>
-
 
   <footer>© 2025 - Enrique Salvatore Ayrton La Cerva</footer>
 
