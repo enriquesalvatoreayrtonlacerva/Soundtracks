@@ -5,154 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Audio</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* BODY E HEADER */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #0d0d0d;
-      color: #e6e6e6;
-    }
-
-    header.hero {
-      text-align: center;
-      padding: 40px 20px;
-      border-bottom: 1px solid #222;
-    }
-
-    .hero-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.6rem;
-      font-weight: 300;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.7;
-      margin: 8px 0 0;
-    }
-
-    /* CONTAINER TRACCE */
-    .container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    .track {
-      background: #141414;
-      padding: 30px;
-      border-radius: 16px;
-      margin-bottom: 40px;
-      border: 1px solid #1f1f1f;
-      box-shadow: 0 0 25px rgba(0,0,0,0.35);
-      transition: transform .3s ease;
-    }
-
-    .track:hover {
-      transform: translateY(-4px);
-    }
-
-    .track h2 {
-      margin-top: 0;
-      font-weight: 300;
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-    }
-
-    .track .meta {
-      font-size: 0.9rem;
-      opacity: 0.6;
-      margin-bottom: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 20px;
-    }
-
-    /* GALLERIA IMMAGINI */
-    .gallery {
-      margin-top: 60px;
-    }
-
-    .gallery h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-weight: 300;
-      font-size: 2rem;
-    }
-
-    .image-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .image-card {
-      flex: 1 1 200px; /* minimo 200px, cresce se possibile */
-      max-width: 250px;
-    }
-
-    .image-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .image-card img:hover {
-      transform: scale(1.05);
-    }
-
-    /* LIGHTBOX */
-    #lightbox {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.85);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    #lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 12px;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
-      opacity: 0.5;
-      border-top: 1px solid #1a1a1a;
-      margin-top: 80px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 600px) {
-      .hero-img {
-        width: 120px;
-        height: 120px;
-      }
-      .image-card {
-        flex: 1 1 150px;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -162,8 +14,11 @@
       src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/profilo.png" 
       alt="Enrique Salvatore Ayrton La Cerva" 
       class="hero-img">
-    <h1>Enrique Salvatore Ayrton La Cerva</h1>
-    <p>Composizioni per film, trailer e progetti multimediali</p>
+
+    <div class="hero-text">
+      <h1>Enrique Salvatore Ayrton La Cerva</h1>
+      <p>Composizioni per film, trailer e progetti multimediali</p>
+    </div>
   </header>
 
   <!-- CONTAINER TRACCE AUDIO -->
@@ -177,7 +32,7 @@
       <audio controls>
         <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/LA PATENTE END (1).mp3" type="audio/mpeg">
       </audio>
-    </div>
+    </div> 
 
     <!-- Traccia 2 -->
     <div class="track">
@@ -197,7 +52,7 @@
       <audio controls>
         <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/DISCORSOLIVATINO.mp3" type="audio/mpeg">
       </audio>
-    </div>
+    </div> 
 
     <!-- Traccia 4 -->
     <div class="track">
@@ -311,27 +166,38 @@
 
   </div>
 
-  <!-- SEZIONE GALLERIA AWARDS -->
+  <!-- GALLERIA IMMAGINI -->
   <section class="gallery container">
     <h2>AWARDS</h2>
-    <div class="image-grid">
-      <div class="image-card">
-        <img src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PREMIO.jpg" alt="Premio" onclick="openLightbox(this.src)">
-      </div>
-    </div>
-  </section>
 
-  <!-- SEZIONE GALLERIA COMPOSER OF -->
+    <div class="image-grid">
+
+      <div class="image-card">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PREMIO.jpg"
+          alt="Immagine 1"
+          
+      </div>
+        
+      <!-- GALLERIA IMMAGINI -->
   <section class="gallery container">
     <h2>COMPOSER OF</h2>
+
     <div class="image-grid">
+
       <div class="image-card">
-        <img src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PAT.jpg" alt="PAT" onclick="openLightbox(this.src)">
-      </div>
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PAT.jpg"
+          alt="Immagine 1"
+          onclick="openLightbox(this.src)">
       <div class="image-card">
-        <img src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/ONORE.jpg" alt="ONORE" onclick="openLightbox(this.src)">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/ONORE.jpg"
+          alt="Immagine 2"
+          onclick="openLightbox(this.src)">
       </div>
-    </div>
+
+  </div>
   </section>
 
   <!-- LIGHTBOX -->
@@ -346,10 +212,11 @@
       document.getElementById('lightbox-img').src = src;
       document.getElementById('lightbox').style.display = 'flex';
     }
+
     function closeLightbox() {
       document.getElementById('lightbox').style.display = 'none';
     }
   </script>
 
 </body>
-</html>
+</html> 
