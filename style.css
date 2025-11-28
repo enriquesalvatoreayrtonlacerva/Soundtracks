@@ -99,9 +99,18 @@ section.gallery h2 {
   transform: scale(1.05);
 }
 
-/* SPECIFICO PER COMPOSER OFF */
+/* SPECIFICO PER COMPOSER OF */
 section.composer .image-grid {
-  justify-content: center; /* Mantiene allineamento centrale */
+  display: flex;
+  flex-wrap: nowrap; /* impedisce che le immagini vadano a capo */
+  justify-content: center;
+  gap: 20px;
+}
+
+section.composer .image-card img {
+  width: 45%; /* due immagini affiancate occupano circa il 90% dello spazio */
+  max-width: 100%;
+  height: auto;
 }
 
 /* LIGHTBOX */
@@ -121,4 +130,13 @@ section.composer .image-grid {
   max-width: 80%;
   max-height: 80%;
   object-fit: contain;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #222;
+  opacity: 0.7;
+  font-size: 0.9rem;
 }
