@@ -1,4 +1,4 @@
-  /* RESET E BASE */
+/* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -108,7 +108,7 @@ section.composer .image-grid {
   justify-content: center;
 }
 
-/* TOOLTIP */
+/* TOOLTIP SOPRA LE IMMAGINI */
 .image-card {
   position: relative;
   display: inline-block;
@@ -123,8 +123,9 @@ section.composer .image-grid {
   padding: 10px;
   border-radius: 8px;
 
+  /* POSIZIONE SOPRA L'IMMAGINE */
   position: absolute;
-  bottom: 110%;
+  top: -110%;  /* sopra l'immagine */
   left: 50%;
   transform: translateX(-50%);
 
@@ -178,4 +179,4 @@ footer {
     width: 90px;
     height: 90px;
   }
-}
+  }
