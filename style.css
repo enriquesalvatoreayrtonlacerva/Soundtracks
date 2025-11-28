@@ -1,3 +1,4 @@
+/* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -13,8 +14,8 @@ header.hero {
 }
 
 header.hero-img {
-  width: 150px;   
-  height: 150px;  
+  width: 150px;  /* ridotto da 200px */
+  height: 150px; /* ridotto da 200px */
   object-fit: cover;
   border-radius: 16px;
   display: block;
@@ -100,16 +101,7 @@ section.gallery h2 {
 
 /* SPECIFICO PER COMPOSER OF */
 section.composer .image-grid {
-  display: flex;
-  flex-wrap: nowrap; 
   justify-content: center;
-  gap: 20px;
-}
-
-section.composer .image-card img {
-  width: 45%; 
-  max-width: 100%;
-  height: auto;
 }
 
 /* LIGHTBOX */
