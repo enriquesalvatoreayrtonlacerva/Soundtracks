@@ -112,7 +112,7 @@ section.composer h2 {
 /* HOVER CARD STILE NETFLIX */
 .image-card .tooltip {
   position: absolute;
-  top: 120%; /* Finestra più in basso sotto l'immagine */
+  top: 350px; /* Posizione sotto l'immagine */
   left: 50%;
   transform: translateX(-50%) scale(0.8);
   width: 320px;
@@ -206,7 +206,7 @@ section.composer .image-grid {
 
   .image-card .tooltip {
     width: 90%;
-    top: 150%; /* Più in basso anche su mobile */
+    top: 400px; /* più in basso su mobile */
     transform: translateX(-50%) scale(1);
   }
 
