@@ -1,4 +1,3 @@
-
 /* RESET E BASE */
 body {
   margin: 0;
@@ -7,8 +6,9 @@ body {
   color: #e6e6e6;
   display: flex;
   justify-content: center; /* Centra la pagina orizzontalmente */
-  align-items: center; /* Centra la pagina verticalmente */
-  height: 100vh; /* Fissa l'altezza della pagina */
+  align-items: flex-start; /* Allinea la pagina nella parte superiore */
+  height: 100%; /* Fissa l'altezza della pagina */
+  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
   overflow-x: hidden; /* Previene lo scorrimento orizzontale */
 }
 
@@ -16,9 +16,11 @@ body {
 header.hero {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra il contenuto orizzontalmente */
+  justify-content: flex-start; /* Centra il contenuto solo orizzontalmente */
   gap: 20px;
   padding: 20px 40px;
+  width: 100%;
+  max-width: 1200px; /* Impostiamo un limite massimo di larghezza */
   border-bottom: 1px solid #222;
 }
 
@@ -48,8 +50,8 @@ header .hero-text p {
 
 /* CONTAINER TRACCE AUDIO */
 .container {
-  max-width: 1200px; /* Impostare un limite massimo di larghezza */
   width: 100%;
+  max-width: 1200px; /* Limita la larghezza massima */
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -244,4 +246,4 @@ section.composer .image-grid {
   .track {
     padding: 40px;
   }
-                               }
+  }
