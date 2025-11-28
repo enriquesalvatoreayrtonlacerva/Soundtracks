@@ -102,15 +102,31 @@ section.gallery h2 {
 /* SPECIFICO PER COMPOSER OF */
 section.composer .image-grid {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* impedisce che le immagini vadano a capo */
   justify-content: center;
   gap: 20px;
 }
 
 section.composer .image-card img {
-  width: 45%;
+  width: 45%; /* due immagini affiancate occupano circa il 90% dello spazio */
   max-width: 100%;
   height: auto;
+}
+
+/* TOOLTIP */
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+  z-index: 10;
+}
+
+.image-card:hover .tooltip {
+  display: block;
 }
 
 /* LIGHTBOX */
@@ -132,41 +148,6 @@ section.composer .image-card img {
   object-fit: contain;
 }
 
-/* CONTACT SECTION */
-.contact {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.contact-box {
-  margin-top: 30px;
-  font-size: 1.1rem;
-}
-
-.contact-box p {
-  margin: 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.contact-box a {
-  color: #e6e6e6;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.contact-box a:hover {
-  text-decoration: underline;
-}
-
-.contact-icon {
-  font-size: 1.3rem;
-  color: #e6e6e6;
-  margin-right: 6px;
-}
-
 /* FOOTER */
 footer {
   text-align: center;
@@ -175,3 +156,16 @@ footer {
   opacity: 0.7;
   font-size: 0.9rem;
 }
+
+/* CONTACTS */
+.contacts {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.contacts h2 {
+  margin-bottom: 20px;
+}
+
+.contact-links a {
+  display: inline-block
