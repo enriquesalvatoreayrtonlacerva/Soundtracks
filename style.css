@@ -1,142 +1,220 @@
-/* RESET E BASE */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: #0d0d0d;
-  color: #e6e6e6;
-}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Audio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* HEADER */
-header.hero {
-  text-align: center;
-  padding: 40px;
-  border-bottom: 1px solid #222;
-}
+  <!-- HEADER CON IMMAGINE -->
+  <header class="hero">
+    <img 
+      src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/profilo.png" 
+      alt="Enrique Salvatore Ayrton La Cerva" 
+      class="hero-img">
 
-header.hero-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
-  margin: 0 auto 20px auto;
-}
+    <div class="hero-text">
+      <h1>Enrique Salvatore Ayrton La Cerva</h1>
+      <p>Composizioni per film, trailer e progetti multimediali</p>
+    </div>
+  </header>
 
-header.hero h1 {
-  font-size: 2.6rem;
-  font-weight: 300;
-  margin: 0;
-}
+  <!-- CONTAINER TRACCE AUDIO -->
+  <div class="container"> 
 
-header.hero p {
-  font-size: 1.1rem;
-  opacity: 0.7;
-  margin-top: 8px;
-}
+    <!-- Traccia 1 -->
+    <div class="track">
+      <h2>LA PATENTE</h2>
+      <div class="meta">Short film based on the novel by Luigi Pirandello · 2024</div>
+      <p>DESCRIPTION: “Soundtrack from the short film "La Patente", directed by Michelle Montalto”.</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/LA%20PATENTE%20END%20(1).mp3" type="audio/mpeg">
+      </audio>
+    </div> 
 
-/* CONTAINER TRACCE AUDIO */
-.container {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
+    <!-- Traccia 2 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 1</h2>
+      <div class="meta">Short film based on life of Rosario Livatino · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/iniziolivatino.mp3" type="audio/mpeg">
+      </audio>
+    </div> 
 
-.track {
-  background: #141414;
-  padding: 30px;
-  border-radius: 16px;
-  margin-bottom: 40px;
-  border: 1px solid #1f1f1f;
-  box-shadow: 0 0 25px rgba(0,0,0,0.35);
-  transition: transform .3s ease;
-}
+    <!-- Traccia 3 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 1</h2>
+      <div class="meta">Short film based on life of Rosario Livatino · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/DISCORSOLIVATINO.mp3" type="audio/mpeg">
+      </audio>
+    </div> 
 
-.track:hover {
-  transform: translateY(-4px);
-}
+    <!-- Traccia 4 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 1</h2>
+      <div class="meta">Short film based on life of Rosario Livatino · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/FINELIVATINO.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-.track h2 {
-  margin-top: 0;
-  font-weight: 300;
-  font-size: 1.8rem;
-  margin-bottom: 8px;
-}
+    <!-- Traccia 5 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 2</h2>
+      <div class="meta">Short film based on life of Padre Pino Puglisi · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/MINACCIAMAFIOSO.wav" type="audio/mpeg">
+      </audio>
+    </div>
 
-.track .meta {
-  font-size: 0.9rem;
-  opacity: 0.6;
-  margin-bottom: 20px;
-}
+    <!-- Traccia 6 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 2</h2>
+      <div class="meta">Short film based on life of Padre Pino Puglisi · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/PUGLISI.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-audio {
-  width: 100%;
-  margin-top: 20px;
-}
+    <!-- Traccia 7 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 2</h2>
+      <div class="meta">Short film based on life of Padre Pino Puglisi · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/fINEpUGL.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-/* GALLERIE IMMAGINI */
-section.gallery h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
+    <!-- Traccia 8 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 3</h2>
+      <div class="meta">Short film based on life of Peppino Impastato · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/DIALOGOINIZIALEPEPPINO.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+    <!-- Traccia 9 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 3</h2>
+      <div class="meta">Short film based on life of Peppino Impastato · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/MARESCIALLO-PADRE.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-.image-card img {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
+    <!-- Traccia 10 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 3</h2>
+      <div class="meta">Short film based on life of Peppino Impastato · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/RIMPROVERO.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-.image-card img:hover {
-  transform: scale(1.05);
-}
+    <!-- Traccia 11 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 3</h2>
+      <div class="meta">Short film based on life of Peppino Impastato · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/FINEPEPPINO.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-/* SPECIFICO PER COMPOSER OF */
-section.composer .image-grid {
-  display: flex;
-  flex-wrap: nowrap; /* impedisce che le immagini vadano a capo */
-  justify-content: center;
-  gap: 20px;
-}
+    <!-- Traccia 12 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 4</h2>
+      <div class="meta">Short film based on life of Giovanni Falcone e Paolo Borsellino · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/ILPIANO.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-section.composer .image-card img {
-  width: 45%; /* due immagini affiancate occupano circa il 90% dello spazio */
-  max-width: 100%;
-  height: auto;
-}
+    <!-- Traccia 13 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 4</h2>
+      <div class="meta">Short film based on life of Giovanni Falcone e Paolo Borsellino · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/PAOLOEGIOVANNI.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-/* LIGHTBOX */
-#lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  justify-content: center;
-  align-items: center;
-}
+    <!-- Traccia 14 -->
+    <div class="track">
+      <h2>L'Onore dei Pupi. EP. 4</h2>
+      <div class="meta">Short film based on life of Giovanni Falcone e Paolo Borsellino · 2025</div>
+      <p>DESCRIPTION: "Soundtrack from the short film "L'Onore dei Pupi" directed by Andrea Lombardo".</p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/INTERVISTA.mp3" type="audio/mpeg">
+      </audio>
+    </div>
 
-#lightbox img {
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: contain;
-}
+  </div>
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #222;
-  opacity: 0.7;
-  font-size: 0.9rem;
-}
+  <!-- GALLERIA IMMAGINI: AWARDS -->
+  <section class="gallery container">
+    <h2>AWARDS</h2>
+    <div class="image-grid">
+      <div class="image-card">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PREMIO.jpg"
+          alt="Premio"
+          onclick="openLightbox(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERIA IMMAGINI: COMPOSER OF -->
+  <section class="gallery container composer">
+    <h2>COMPOSER OF</h2>
+    <div class="image-grid">
+      <div class="image-card">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PAT.jpg"
+          alt="PAT"
+          onclick="openLightbox(this.src)">
+      </div>
+      <div class="image-card">
+        <img 
+          src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/ONORE.jpg"
+          alt="ONORE"
+          onclick="openLightbox(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer>© 2025 - Enrique Salvatore Ayrton La Cerva</footer>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
