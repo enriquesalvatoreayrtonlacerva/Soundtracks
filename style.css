@@ -1,29 +1,35 @@
-  
 /* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background: #0d0d0d;
   color: #e6e6e6;
-  overflow-x: hidden; /* Aggiunta per evitare lo scroll orizzontale */
+  overflow-x: hidden; /* Per evitare lo scroll orizzontale */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrato il contenuto */
+  justify-content: flex-start; /* Posizioniamo il contenuto nella parte alta */
+  min-height: 100vh; /* Assicura che il body occupi almeno tutta la finestra */
 }
 
 /* HEADER */
 header.hero {
   display: flex;
   align-items: center;
+  justify-content: center; /* Centriamo gli elementi */
+  flex-direction: column; /* Rendi la colonna per i piccoli schermi */
   gap: 20px;
   padding: 20px 40px;
   border-bottom: 1px solid #222;
-  flex-wrap: wrap; /* Per gestire correttamente la disposizione degli elementi su mobile */
+  width: 100%; /* Utilizza tutta la larghezza disponibile */
+  box-sizing: border-box;
 }
 
 header .hero-img {
-  width: 70px;
-  height: 70px;
+  width: 90px; /* Larghezza fissa per il logo */
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
-  flex-shrink: 0;
 }
 
 header .hero-text h1 {
@@ -40,10 +46,11 @@ header .hero-text p {
 
 /* CONTAINER TRACCE AUDIO */
 .container {
-  max-width: 100%; /* Per fare in modo che il container si adatti alla larghezza dello schermo */
+  max-width: 1200px; /* Impostiamo un limite di larghezza massimo per evitare che si allarghi troppo */
+  width: 100%; /* Impostiamo la larghezza al 100% */
   margin: 60px auto;
   padding: 0 20px;
-  box-sizing: border-box; /* Aggiunto per evitare problemi di overflow */
+  box-sizing: border-box; /* Assicuriamo che il padding non esca dallo schermo */
 }
 
 .track {
@@ -54,6 +61,7 @@ header .hero-text p {
   border: 1px solid #1f1f1f;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
   transition: transform .3s ease;
+  width: 100%; /* Fa sì che la larghezza del track sia fluida e si adatti */
 }
 
 .track:hover {
@@ -91,7 +99,7 @@ section.composer h2 {
   justify-content: center;
   gap: 20px;
   width: 100%;
-  box-sizing: border-box; /* Aggiunto per evitare overflow */
+  box-sizing: border-box;
 }
 
 /* IMMAGINI CARD */
@@ -99,12 +107,15 @@ section.composer h2 {
   position: relative;
   display: inline-block;
   transition: transform 0.3s ease;
+  width: 300px; /* Larghezza fissa per le card */
+  max-width: 100%;
+  box-sizing: border-box; /* Gestione migliore delle dimensioni */
 }
 
 .image-card img {
   display: block;
-  width: 300px;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -210,10 +221,16 @@ section.composer .image-grid {
     height: 90px;
   }
 
-  .image-card .tooltip {
-    width: 90%;
-    top: 400px; /* più in basso su mobile */
-    transform: translateX(-50%) scale(1);
+  .container {
+    padding: 0 15px; /* Ridurre il padding su mobile */
+  }
+
+  .track {
+    margin-bottom: 20px; /* Ridurre il margine tra le tracce su mobile */
+  }
+
+  .image-card {
+    width: 100%; /* Fare in modo che le card occupino tutta la larghezza possibile su mobile */
   }
 
   .tooltip-header {
@@ -227,4 +244,4 @@ section.composer .image-grid {
     height: 150px;
   }
   }
-    
+  
