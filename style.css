@@ -7,7 +7,8 @@ body {
 }
 
 /* HEADER */
-header.hero {            
+header.hero {
+  display: flex;              /* layout in riga */
   align-items: center;
   gap: 20px;
   padding: 40px;
@@ -15,8 +16,9 @@ header.hero {
 }
 
 header.hero-img {
-  width: 20px; /* piccolo */
-  height: 20px;
+  width: 100px; /* piccolo */
+  height: 100px;
+  object-fit: cover;
   border-radius: 16px;
 }
 
@@ -129,4 +131,3 @@ footer {
   opacity: 0.7;
   font-size: 0.9rem;
 }
-
