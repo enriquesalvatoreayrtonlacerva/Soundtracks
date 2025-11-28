@@ -2,8 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: url('https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/sfondo.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: #0d0d0d;
   color: #e6e6e6;
 }
 
@@ -43,7 +42,7 @@ header.hero p {
 }
 
 .track {
-  background: rgba(20, 20, 20, 0.85);
+  background: #141414;
   padding: 30px;
   border-radius: 16px;
   margin-bottom: 40px;
@@ -103,13 +102,13 @@ section.gallery h2 {
 /* SPECIFICO PER COMPOSER OF */
 section.composer .image-grid {
   display: flex;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap; /* impedisce che le immagini vadano a capo */
   justify-content: center;
   gap: 20px;
 }
 
 section.composer .image-card img {
-  width: 45%; 
+  width: 45%; /* due immagini affiancate occupano circa il 90% dello spazio */
   max-width: 100%;
   height: auto;
 }
