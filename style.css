@@ -1,9 +1,11 @@
+  
 /* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background: #0d0d0d;
   color: #e6e6e6;
+  overflow-x: hidden; /* Aggiunta per evitare lo scroll orizzontale */
 }
 
 /* HEADER */
@@ -13,6 +15,7 @@ header.hero {
   gap: 20px;
   padding: 20px 40px;
   border-bottom: 1px solid #222;
+  flex-wrap: wrap; /* Per gestire correttamente la disposizione degli elementi su mobile */
 }
 
 header .hero-img {
@@ -37,9 +40,10 @@ header .hero-text p {
 
 /* CONTAINER TRACCE AUDIO */
 .container {
-  max-width: 900px;
+  max-width: 100%; /* Per fare in modo che il container si adatti alla larghezza dello schermo */
   margin: 60px auto;
   padding: 0 20px;
+  box-sizing: border-box; /* Aggiunto per evitare problemi di overflow */
 }
 
 .track {
@@ -48,7 +52,7 @@ header .hero-text p {
   border-radius: 16px;
   margin-bottom: 40px;
   border: 1px solid #1f1f1f;
-  box-shadow: 0 0 25px rgba(0,0,0,0.35);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
   transition: transform .3s ease;
 }
 
@@ -86,6 +90,8 @@ section.composer h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Aggiunto per evitare overflow */
 }
 
 /* IMMAGINI CARD */
@@ -220,4 +226,5 @@ section.composer .image-grid {
     width: 150px;
     height: 150px;
   }
-  }  
+  }
+    
