@@ -16,8 +16,8 @@ header.hero {
 }
 
 header.hero-img {
-  width: 80px;           /* piccola */
-  height: 80px;
+  width: 40px;           /* piccola */
+  height: 40px;
   object-fit: cover;
   border-radius: 80%;    /* circolare */
 }
