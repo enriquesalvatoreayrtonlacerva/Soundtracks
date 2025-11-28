@@ -10,16 +10,17 @@ body {
 header.hero {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 40px;
+  gap: 20px; /* spazio tra immagine e testo */
+  padding: 20px 40px;
   border-bottom: 1px solid #222;
 }
 
 header.hero-img {
-  width: 40px;           /* piccola */
-  height: 40px;
+  width: 60px;           /* dimensione piccola */
+  height: 60px;
   object-fit: cover;
-  border-radius: 80%;    /* circolare */
+  border-radius: 50%;    /* circolare */
+  flex-shrink: 0;        /* impedisce riduzione */
 }
 
 header.hero-text h1 {
