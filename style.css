@@ -113,38 +113,6 @@ section.composer .image-card img {
   height: auto;
 }
 
-/* ⭐ SEZIONE CONTATTI */
-section.contact {
-  margin-top: 80px;
-  text-align: center;
-}
-
-.contact-box {
-  background: #141414;
-  border: 1px solid #1f1f1f;
-  padding: 30px;
-  border-radius: 16px;
-  margin: 30px auto 0 auto;
-  max-width: 500px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.35);
-}
-
-.contact-box p {
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
-
-/* ⭐ LINK */
-.contact-box a {
-  color: #e6e6e6;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.contact-box a:hover {
-  text-decoration: underline;
-}
-
 /* LIGHTBOX */
 #lightbox {
   display: none;
@@ -162,6 +130,41 @@ section.contact {
   max-width: 80%;
   max-height: 80%;
   object-fit: contain;
+}
+
+/* CONTACT SECTION */
+.contact {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.contact-box {
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.contact-box p {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-box a {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  font-size: 1.3rem;
+  color: #e6e6e6;
+  margin-right: 6px;
 }
 
 /* FOOTER */
