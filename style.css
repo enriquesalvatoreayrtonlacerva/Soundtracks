@@ -8,31 +8,30 @@ body {
 
 /* HEADER */
 header.hero {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 40px;
+  text-align: center;
+  padding: 40px;
   border-bottom: 1px solid #222;
 }
 
-header .hero-img {
-  width: 70px;
-  height: 70px;
+header.hero-img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 50%;
-  flex-shrink: 0;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
-header .hero-text h1 {
-  font-size: 1.8rem;
+header.hero h1 {
+  font-size: 2.6rem;
   font-weight: 300;
   margin: 0;
 }
 
-header .hero-text p {
-  font-size: 1rem;
+header.hero p {
+  font-size: 1.1rem;
   opacity: 0.7;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 /* CONTAINER TRACCE AUDIO */
@@ -75,8 +74,7 @@ audio {
 }
 
 /* GALLERIE IMMAGINI */
-section.gallery h2,
-section.composer h2 {
+section.gallery h2 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -88,74 +86,63 @@ section.composer h2 {
   gap: 20px;
 }
 
-/* IMMAGINI CARD */
-.image-card {
-  position: relative;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
 .image-card img {
-  display: block;
   width: 300px;
   max-width: 100%;
+  height: auto;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.image-card:hover img {
-  transform: scale(1.1);
-  z-index: 10;
+.image-card img:hover {
+  transform: scale(1.05);
 }
 
-/* HOVER CARD STILE NETFLIX */
-.image-card .tooltip {
-  position: absolute;
-  top: 350px; /* Posizione sotto l'immagine */
-  left: 50%;
-  transform: translateX(-50%) scale(0.8);
-  width: 320px;
-  background: rgba(28,28,28,0.95);
-  border-radius: 12px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 20;
-  pointer-events: none;
-}
-
-.image-card:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) scale(1);
-}
-
-.tooltip-header {
+/* SPECIFICO PER COMPOSER OF */
+section.composer .image-grid {
   display: flex;
-  gap: 15px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.tooltip-header img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
+section.composer .image-card img {
+  width: 45%;
+  max-width: 100%;
+  height: auto;
 }
 
-.tooltip-title h3 {
-  margin: 0 0 5px 0;
+/* ⭐ SEZIONE CONTATTI */
+section.contact {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.contact-box {
+  background: #141414;
+  border: 1px solid #1f1f1f;
+  padding: 30px;
+  border-radius: 16px;
+  margin: 30px auto 0 auto;
+  max-width: 500px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.35);
+}
+
+.contact-box p {
+  margin: 10px 0;
   font-size: 1.1rem;
+}
+
+/* ⭐ LINK */
+.contact-box a {
+  color: #e6e6e6;
+  text-decoration: none;
   font-weight: 600;
 }
 
-.tooltip-title p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.3;
-  opacity: 0.9;
+.contact-box a:hover {
+  text-decoration: underline;
 }
 
 /* LIGHTBOX */
@@ -169,7 +156,6 @@ section.composer h2 {
   background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
-  z-index: 9999;
 }
 
 #lightbox img {
@@ -185,39 +171,4 @@ footer {
   border-top: 1px solid #222;
   opacity: 0.7;
   font-size: 0.9rem;
-}
-
-/* COMPOSER OF centrato */
-section.composer .image-grid {
-  justify-content: center;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  header.hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header .hero-img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .image-card .tooltip {
-    width: 90%;
-    top: 400px; /* più in basso su mobile */
-    transform: translateX(-50%) scale(1);
-  }
-
-  .tooltip-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .tooltip-header img {
-    width: 150px;
-    height: 150px;
-  }
 }
