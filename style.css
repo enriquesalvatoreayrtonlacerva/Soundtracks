@@ -1,4 +1,3 @@
-/* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -14,8 +13,8 @@ header.hero {
 }
 
 header.hero-img {
-  width: 150px;   /* ridotto da 200px */
-  height: 150px;  /* ridotto da 200px */
+  width: 150px;   
+  height: 150px;  
   object-fit: cover;
   border-radius: 16px;
   display: block;
