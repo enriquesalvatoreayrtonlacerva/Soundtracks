@@ -1,4 +1,5 @@
-    /* RESET E BASE */
+
+/* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -8,6 +9,7 @@ body {
   justify-content: center; /* Centra la pagina orizzontalmente */
   align-items: center; /* Centra la pagina verticalmente */
   height: 100vh; /* Fissa l'altezza della pagina */
+  overflow-x: hidden; /* Previene lo scorrimento orizzontale */
 }
 
 /* HEADER */
@@ -46,7 +48,8 @@ header .hero-text p {
 
 /* CONTAINER TRACCE AUDIO */
 .container {
-  max-width: 900px;
+  max-width: 1200px; /* Impostare un limite massimo di larghezza */
+  width: 100%;
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -106,8 +109,9 @@ section.composer h2 {
 
 .image-card img {
   display: block;
-  width: 300px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px; /* Limita la dimensione massima delle immagini */
+  height: auto;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -202,5 +206,42 @@ section.composer .image-grid {
 }
 
 /* RESPONSIVE */
-@media (max-width: 600
-      
+@media (max-width: 600px) {
+  header.hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .hero-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .image-card .tooltip {
+    width: 90%;
+    top: 400px; /* più in basso su mobile */
+    transform: translateX(-50%) scale(1);
+  }
+
+  .tooltip-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tooltip-header img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* LAYOUT SU SCHERMI LARGHI */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .track {
+    padding: 40px;
+  }
+                               }
