@@ -1,4 +1,5 @@
-      /* RESET E BASE */
+        
+/* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -112,7 +113,7 @@ section.composer h2 {
 /* HOVER CARD STILE NETFLIX */
 .image-card .tooltip {
   position: absolute;
-  top: -350%;
+  top: -200%; /* <-- finestra più in basso rispetto a prima */
   left: 50%;
   transform: translateX(-50%) scale(0.8);
   width: 320px;
@@ -206,7 +207,7 @@ section.composer .image-grid {
 
   .image-card .tooltip {
     width: 90%;
-    top: -400%;
+    top: -300%; /* più in basso anche su mobile */
     transform: translateX(-50%) scale(1);
   }
 
