@@ -4,23 +4,14 @@ body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background: #0d0d0d;
   color: #e6e6e6;
-  display: flex;
-  justify-content: center; /* Centra la pagina orizzontalmente */
-  align-items: flex-start; /* Allinea la pagina nella parte superiore */
-  height: 100%; /* Fissa l'altezza della pagina */
-  width: 100%; /* Assicura che occupi tutta la larghezza disponibile */
-  overflow-x: hidden; /* Previene lo scorrimento orizzontale */
 }
 
 /* HEADER */
 header.hero {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Centra il contenuto solo orizzontalmente */
   gap: 20px;
   padding: 20px 40px;
-  width: 100%;
-  max-width: 1200px; /* Impostiamo un limite massimo di larghezza */
   border-bottom: 1px solid #222;
 }
 
@@ -30,10 +21,6 @@ header .hero-img {
   object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
-}
-
-header .hero-text {
-  text-align: left; /* Allinea il testo a sinistra */
 }
 
 header .hero-text h1 {
@@ -50,8 +37,7 @@ header .hero-text p {
 
 /* CONTAINER TRACCE AUDIO */
 .container {
-  width: 100%;
-  max-width: 1200px; /* Limita la larghezza massima */
+  max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -111,9 +97,8 @@ section.composer h2 {
 
 .image-card img {
   display: block;
-  width: 100%;
-  max-width: 300px; /* Limita la dimensione massima delle immagini */
-  height: auto;
+  width: 300px;
+  max-width: 100%;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -235,15 +220,4 @@ section.composer .image-grid {
     width: 150px;
     height: 150px;
   }
-}
-
-/* LAYOUT SU SCHERMI LARGHI */
-@media (min-width: 1024px) {
-  .container {
-    padding: 0 40px;
-  }
-
-  .track {
-    padding: 40px;
-  }
-  }
+  }  
