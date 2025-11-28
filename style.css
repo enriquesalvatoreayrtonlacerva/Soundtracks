@@ -7,8 +7,7 @@ body {
 }
 
 /* HEADER */
-header.hero {
-  display: flex;              /* layout in riga */
+header.hero {            
   align-items: center;
   gap: 20px;
   padding: 40px;
