@@ -8,7 +8,7 @@ body {
 
 /* HEADER */
 header.hero {
-  display: flex;              /* layout in riga */
+  display: flex;
   align-items: center;
   gap: 20px;
   padding: 40px;
@@ -16,14 +16,14 @@ header.hero {
 }
 
 header.hero-img {
-  width: 100px; /* piccolo */
-  height: 100px;
+  width: 80px;           /* piccola */
+  height: 80px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 50%;    /* circolare */
 }
 
 header.hero-text h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 300;
   margin: 0;
 }
@@ -31,7 +31,7 @@ header.hero-text h1 {
 header.hero-text p {
   font-size: 1rem;
   opacity: 0.7;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 /* CONTAINER TRACCE AUDIO */
