@@ -102,31 +102,47 @@ section.gallery h2 {
 /* SPECIFICO PER COMPOSER OF */
 section.composer .image-grid {
   display: flex;
-  flex-wrap: nowrap; /* impedisce che le immagini vadano a capo */
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 20px;
 }
 
 section.composer .image-card img {
-  width: 45%; /* due immagini affiancate occupano circa il 90% dello spazio */
+  width: 45%;
   max-width: 100%;
   height: auto;
 }
 
-/* TOOLTIP */
-.tooltip {
-  display: none;
-  position: absolute;
-  background: #222;
-  color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  max-width: 300px;
-  z-index: 10;
+/* ⭐ SEZIONE CONTATTI */
+section.contact {
+  margin-top: 80px;
+  text-align: center;
 }
 
-.image-card:hover .tooltip {
-  display: block;
+.contact-box {
+  background: #141414;
+  border: 1px solid #1f1f1f;
+  padding: 30px;
+  border-radius: 16px;
+  margin: 30px auto 0 auto;
+  max-width: 500px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.35);
+}
+
+.contact-box p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* ⭐ LINK */
+.contact-box a {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
 }
 
 /* LIGHTBOX */
@@ -156,16 +172,3 @@ footer {
   opacity: 0.7;
   font-size: 0.9rem;
 }
-
-/* CONTACTS */
-.contacts {
-  text-align: center;
-  margin: 60px auto;
-}
-
-.contacts h2 {
-  margin-bottom: 20px;
-}
-
-.contact-links a {
-  display: inline-block
