@@ -1,4 +1,3 @@
-/* BODY E HEADER */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -13,26 +12,24 @@ header.hero {
 }
 
 .hero-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 16px;
   margin-bottom: 20px;
 }
 
-header h1 {
+.hero-text h1 {
+  margin: 0;
   font-size: 2.6rem;
   font-weight: 300;
-  margin: 0;
 }
 
-header p {
+.hero-text p {
   font-size: 1.1rem;
   opacity: 0.7;
-  margin: 8px 0 0;
 }
 
-/* CONTAINER TRACCE */
 .container {
   max-width: 900px;
   margin: 60px auto;
@@ -71,16 +68,11 @@ audio {
   margin-top: 20px;
 }
 
-/* GALLERIA IMMAGINI */
-.gallery {
-  margin-top: 60px;
-}
-
+/* Galleria immagini */
 .gallery h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 30px;
-  font-weight: 300;
-  font-size: 2rem;
 }
 
 .image-grid {
@@ -91,13 +83,12 @@ audio {
 }
 
 .image-card {
-  flex: 1 1 200px; /* minimo 200px, cresce se possibile */
-  max-width: 250px;
+  flex: 0 0 auto;
+  max-width: 200px;
 }
 
 .image-card img {
   width: 100%;
-  height: auto;
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -107,15 +98,18 @@ audio {
   transform: scale(1.05);
 }
 
-/* LIGHTBOX */
+/* Lightbox */
 #lightbox {
   display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.85);
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.9);
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 #lightbox img {
@@ -124,7 +118,6 @@ audio {
   border-radius: 12px;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 30px;
@@ -132,21 +125,4 @@ footer {
   opacity: 0.5;
   border-top: 1px solid #1a1a1a;
   margin-top: 80px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 800px) {
-  .hero-img {
-    width: 120px;
-    height: 120px;
-  }
-  .image-card {
-    flex: 1 1 180px;
-  }
-}
-
-@media (max-width: 500px) {
-  .image-card {
-    flex: 1 1 100%;
-  }
 }
