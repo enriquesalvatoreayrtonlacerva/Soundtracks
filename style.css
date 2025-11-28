@@ -102,47 +102,15 @@ section.gallery h2 {
 /* SPECIFICO PER COMPOSER OF */
 section.composer .image-grid {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* impedisce che le immagini vadano a capo */
   justify-content: center;
   gap: 20px;
 }
 
 section.composer .image-card img {
-  width: 45%;
+  width: 45%; /* due immagini affiancate occupano circa il 90% dello spazio */
   max-width: 100%;
   height: auto;
-}
-
-/* ⭐ SEZIONE CONTATTI */
-section.contact {
-  margin-top: 80px;
-  text-align: center;
-}
-
-.contact-box {
-  background: #141414;
-  border: 1px solid #1f1f1f;
-  padding: 30px;
-  border-radius: 16px;
-  margin: 30px auto 0 auto;
-  max-width: 500px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.35);
-}
-
-.contact-box p {
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
-
-/* ⭐ LINK */
-.contact-box a {
-  color: #e6e6e6;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.contact-box a:hover {
-  text-decoration: underline;
 }
 
 /* LIGHTBOX */
