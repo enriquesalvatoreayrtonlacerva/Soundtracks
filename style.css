@@ -19,7 +19,7 @@ header.hero-img {
   width: 80px;           /* piccola */
   height: 80px;
   object-fit: cover;
-  border-radius: 50%;    /* circolare */
+  border-radius: 80%;    /* circolare */
 }
 
 header.hero-text h1 {
