@@ -1,4 +1,4 @@
-/* RESET */
+  /* RESET E BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -9,56 +9,41 @@ body {
 /* HEADER */
 header.hero {
   display: flex;
-  align-items: center;      /* allineamento perfetto */
+  align-items: center;
   gap: 20px;
   padding: 20px 40px;
   border-bottom: 1px solid #222;
 }
 
-.hero-img {
-  width: 60px;
-  height: 60px;
+/* IMMAGINE CORRETTA — rotonda e piccola */
+header .hero-img {
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-.hero-text h1 {
-  margin: 0;
+/* TESTO HEADER */
+header .hero-text h1 {
   font-size: 1.8rem;
   font-weight: 300;
+  margin: 0;
 }
 
-.hero-text p {
-  margin: 5px 0 0;
+header .hero-text p {
   font-size: 1rem;
   opacity: 0.7;
+  margin-top: 5px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  header.hero {
-    flex-direction: row;
-  }
-
-  .hero-img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .hero-text h1 {
-    font-size: 1.4rem;
-  }
-}
-
-/* CONTAINER */
+/* CONTAINER TRACCE AUDIO */
 .container {
   max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
-/* TRACK */
 .track {
   background: #141414;
   padding: 30px;
@@ -91,8 +76,9 @@ audio {
   margin-top: 20px;
 }
 
-/* GALLERIE */
-section.gallery h2 {
+/* GALLERIE IMMAGINI */
+section.gallery h2,
+section.composer h2 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -107,28 +93,39 @@ section.gallery h2 {
 .image-card img {
   width: 300px;
   max-width: 100%;
+  height: auto;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
 .image-card img:hover {
   transform: scale(1.05);
 }
 
+/* COMPOSER OF — centrato */
+section.composer .image-grid {
+  justify-content: center;
+}
+
 /* LIGHTBOX */
 #lightbox {
   display: none;
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 #lightbox img {
   max-width: 80%;
   max-height: 80%;
+  object-fit: contain;
 }
 
 /* FOOTER */
@@ -137,4 +134,18 @@ footer {
   padding: 20px;
   border-top: 1px solid #222;
   opacity: 0.7;
+  font-size: 0.9rem;
 }
+
+/* RESPONSIVE FIX per mobile */
+@media (max-width: 600px) {
+  header.hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .hero-img {
+    width: 90px;
+    height: 90px;
+  }
+  }
