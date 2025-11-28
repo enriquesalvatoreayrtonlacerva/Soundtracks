@@ -15,7 +15,7 @@ header.hero {
   border-bottom: 1px solid #222;
 }
 
-/* IMMAGINE CORRETTA — rotonda e piccola */
+/* IMMAGINE HEADER */
 header .hero-img {
   width: 70px;
   height: 70px;
@@ -103,9 +103,39 @@ section.composer h2 {
   transform: scale(1.05);
 }
 
-/* COMPOSER OF — centrato */
+/* COMPOSER OF centrato */
 section.composer .image-grid {
   justify-content: center;
+}
+
+/* TOOLTIP */
+.image-card {
+  position: relative;
+  display: inline-block;
+}
+
+.image-card .tooltip {
+  visibility: hidden;
+  width: 250px;
+  background-color: rgba(0,0,0,0.85);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.image-card:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* LIGHTBOX */
@@ -137,7 +167,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVE FIX per mobile */
+/* RESPONSIVE */
 @media (max-width: 600px) {
   header.hero {
     flex-direction: column;
@@ -148,4 +178,4 @@ footer {
     width: 90px;
     height: 90px;
   }
-  }
+}
