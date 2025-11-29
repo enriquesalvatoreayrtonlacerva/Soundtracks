@@ -22,7 +22,7 @@
 
   <!-- CONTAINER TRACCE AUDIO -->
   <div class="container">
-    <!-- TRACCE AUDIO COMPLETE -->
+
     <div class="track">
       <h2>LA PATENTE</h2>
       <div class="meta">Short film based on the novel by Luigi Pirandello · 2024</div>
@@ -148,12 +148,14 @@
         <source src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/mp3/INTERVISTA.mp3" type="audio/mpeg">
       </audio>
     </div>
+
   </div>
 
   <!-- AWARDS -->
   <section class="gallery container">
     <h2>AWARDS</h2>
     <div class="image-grid">
+
       <div class="image-card">
         <img src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PREMIO.jpg" alt="Premio" onclick="openLightbox(this.src)">
         <div class="tooltip">
@@ -166,6 +168,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -173,6 +176,7 @@
   <section class="gallery container composer">
     <h2>COMPOSER OF</h2>
     <div class="image-grid">
+
       <div class="image-card">
         <img src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PAT.jpg" alt="PAT" onclick="openLightbox(this.src)">
         <div class="tooltip">
@@ -180,7 +184,7 @@
             <img src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/PAT.jpg" alt="PAT">
             <div class="tooltip-title">
               <h3>LA PATENTE</h3>
-              <p>Composizione per il corto "La Patente", adattamento della novella omonima di Luigi Pirandello. Esprime tutta la delusione e la resa del protagonista.</p>
+              <p>Composizione per il corto "La Patente", adattamento della novella omonima di Luigi Pirandello.</p>
             </div>
           </div>
         </div>
@@ -193,11 +197,12 @@
             <img src="https://raw.githubusercontent.com/enriquesalvatoreayrtonlacerva/Soundtracks/main/immagini/ONORE.jpg" alt="ONORE">
             <div class="tooltip-title">
               <h3>L'ONORE DEI PUPI</h3>
-              <p>Composizione per il corto "L'Onore dei Pupi", che descrive gli animi e le vicende che hanno caratterizzato le vite di questi paladini dell'antimafia.</p>
+              <p>Composizione per il corto "L'Onore dei Pupi", che descrive gli animi e le vicende che hanno caratterizzato le vite dei paladini dell'antimafia.</p>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -210,9 +215,24 @@
   <section class="contacts">
     <h2>Contattami</h2>
     <p>Se sei interessato alle mie composizioni musicali o hai bisogno di un contatto, non esitare a scrivermi!</p>
+
     <div class="contact-info">
-      <p><strong>Email:</strong> enrique@example.com</p>
-      <p><strong>Telefono:</strong> +39 123 456 789</p>
+
+      <a href="mailto:enrique@example.com" class="contact-item" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        <span>Email: enrique@example.com</span>
+      </a>
+
+      <a href="tel:+39123456789" class="contact-item" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Telefono">
+        <span>Telefono: +39 123 456 789</span>
+      </a>
+
+      <a href="https://www.instagram.com/tuo_instagram" class="contact-item" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+
     </div>
   </section>
 
@@ -224,12 +244,10 @@
       document.getElementById('lightbox-img').src = src;
       document.getElementById('lightbox').style.display = 'flex';
     }
-
     function closeLightbox() {
       document.getElementById('lightbox').style.display = 'none';
     }
   </script>
 
 </body>
-  </html>
-  
+                                                                                                      </html>
