@@ -125,7 +125,7 @@ section.composer h2 {
 /* Tooltip stile Netflix */
 .image-card .tooltip {
   position: absolute;
-  top: 100%; /* Posiziona il tooltip sopra l'immagine successiva */
+  top: 100%; /* Posizionato sopra l'immagine successiva */
   left: 50%;
   transform: translateX(-50%) scale(0.8);
   width: 320px;
@@ -139,7 +139,7 @@ section.composer h2 {
   padding: 15px;
   max-height: 250px;
   overflow-y: auto;
-  z-index: 1000; /* Impostato su un valore più alto per evitare che venga coperto */
+  z-index: 10; /* Assicura che il tooltip sia visibile sopra altre immagini */
 }
 
 .image-card:hover .tooltip {
@@ -174,7 +174,7 @@ section.composer h2 {
 @media (max-width: 600px) {
   .image-card .tooltip {
     width: 260px;
-    top: 250px; /* Regola la posizione del tooltip per evitare conflitti */
+    top: 250px; /* Evita che si sovrapponga a troppe immagini */
   }
 }
 
@@ -255,4 +255,4 @@ footer {
   padding: 30px;
   opacity: 0.7;
   margin-top: 60px;
-      }
+    }
